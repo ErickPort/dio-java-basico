@@ -35,8 +35,12 @@ System.out.println("Olá, " + nomeDigitado + "! Bem-vindo ao curso de Java Bási
 System.out.println("Seu carro foi fabricado em " + anoFabricacao + ".");
 System.out.println("A soma dos números é: " + (primeiroNumero + segundoNumero));
 
+idade = 32;
 
 
 
+
+
+ 
 }
-}
+} 
