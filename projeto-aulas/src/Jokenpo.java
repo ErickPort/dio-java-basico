@@ -30,10 +30,5 @@ if (escolhaComputador == escolha) {
 } else {
     System.out.println("Que pena! O computador venceu!");
 }
-
-
-
-
 }
-
 }

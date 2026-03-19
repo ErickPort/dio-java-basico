@@ -17,7 +17,7 @@ public static void main(String[] args) {
     String nomeCompleto = nomeCompleto(nome, sobrenome);
 
     System.out.println("Meu nome é " + NOME_COMPLETO + ", tenho "
-     + idade + " anos e minha altura é " + altura + "m. Minha mãe se chama " + nomeMae + 
+     + idade + " anos e minha altura é " + altura + ". Minha mãe se chama " + nomeMae + 
      " e meu número de telefone é " + numeroTelefone + "."  );
 
      Scanner scanner = new Scanner(System.in);
