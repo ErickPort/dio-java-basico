@@ -9,16 +9,10 @@ Scanner scanner = new Scanner(System.in);
 
 System.out.print("Digite a nota do aluno: ");
 nota = scanner.nextInt();
-if (nota >= 6)
-{
-    System.out.println("Aluno aprovado!");
-}
-else
-{
-    System.out.println("Aluno reprovado!");
 
-    
-}
+String resultado = (nota >= 7) ? "Aprovado" : "Reprovado";
+System.out.println("O aluno está: " + resultado);
+
 }
    
 

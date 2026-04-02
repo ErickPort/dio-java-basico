@@ -42,8 +42,6 @@ idade = 32;
 
 
 
-
-
  
 }
 
@@ -53,12 +51,6 @@ public static String nomeCompleto(String nome, String sobrenome) {
 
 
 
-
-
 } 
-
-
-
-  
 
 } 
