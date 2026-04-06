@@ -1,9 +1,36 @@
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 public class candidatura{
     public static void main(String[] args) throws Exception {
         System.out.println("Processo de candidatura iniciado...");
-        imprimirSelecionados();
+        String [] candidatos = {"João", "Maria", "Pedro", "Ana", "Lucas", "Carla", "Rafael", "Beatriz", "Gustavo", "Fernanda"};
 
+
+    }
+
+    static void entrandoEmContato(String candidato){
+        int tentativasRealizadas =1;
+        boolean continuarTentando = true;
+        boolean atendeu = false;
+    do{
+        atendeu = atender();
+        continuarTentando = !atendeu;
+        if(continuarTentando)
+            tentativasRealizadas++;
+        else
+            System.out.println("CONTATO REALIZADO COM SUCESSO!");
+
+    } while(continuarTentando && tentativasRealizadas < 3);
+    if (atendeu) {
+        System.out.println("O " + candidato + " atendeu na " + tentativasRealizadas + " tentativa");
+    } else {
+        System.out.println("Não conseguimos contato com o " + candidato + " após " + tentativasRealizadas + " tentativas");
+        
+    }
+    }
+
+    static boolean atender() {
+        return new Random().nextInt(3) == 1;
     }
 
     static void imprimirSelecionados(){
@@ -17,11 +44,6 @@ public class candidatura{
             System.out.println("O candidato selecionado foi " + candidato);
         }
     }
-
-
-
-
-
 
     static void selecaoCandidato(){
         String [] candidatos = {"João", "Maria", "Pedro", "Ana", "Lucas", "Carla", "Rafael", "Beatriz", "Gustavo", "Fernanda"};
